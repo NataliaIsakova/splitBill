@@ -1,0 +1,80 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1684394944541-c57e2df37ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#container {
+    background-color:rgba(58, 230, 239, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius: 40px;
+    }
+
+    form {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 40px;
+        text-shadow: 2px 2px blue;
+        align-self: center;
+    }
+
+    input {
+        background-color: ivory;
+        border: none;
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    #savings {
+        background-color: blue;
+        border: none;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    #savingAmount {
+        display: none;
+    }
+
+    #btn {
+        background-color: blue;
+        border: none;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    #deposit {
+        background-color: blue;
+        border: none;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    #calculation {
+        display: flex;
+    }
+    
+    #totalIncome, 
+    #totalPayments,
+    #canSpend {
+        background-color: azure ;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid darkblue;
+    }

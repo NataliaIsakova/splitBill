@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+<h1>Доход-Расход на месяц</h1>
+
+<form>
+<p>Зарплата</p>
+<input type="text" placeholder="Введи сумму" id="income">
+<p>Расходы на аренду и коммунальные услуги</p>
+<input type="text" placeholder="Введи сумму" id="payments">
+<p>Продукты, проезд, товары первой необходимости</p>
+<input type="text" placeholder="Введи сумму" id="otherPayments">
+<button id="deposit">Выбери процент от суммы, который хочешь положить на депозит в этом месяце</button>
+<select name="" id="savingsAmount">
+    <option value="0.10">10%</option>
+    <option value="0.20">20%</option>
+    <option value="0.30">30%</option>
+    <option value="0.00" selected>В этом месяце не откладываю</option>
+</select>
+
+<button id="btn">Рассчитать</button>
+</form>
+
+<div id="calculation">
+<div id="totalIncome">
+    <p>Доход</p>
+    <span>$</span>
+    <span id="recievedSum"></span>
+</div>
+<div id="totalPayments">
+    <p>Расход</p>
+    <span>$</span>
+    <span id="spentSum"></span>
+</div>
+<div id="canSpend">
+    <p>Доступный остаток</p>
+    <span>$</span>
+    <span id="theRest"></span>
+</div>
+    </div>
+</div> 
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
